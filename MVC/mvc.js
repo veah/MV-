@@ -22,7 +22,7 @@ function initInput(){
 	$("#todo-input").html(todoInputView.$el);
 }
 
-function initInput(){
+function initList(){
 	var todoListController = new TodoIListController(todosModel);
 	var todoListView = new TodoListView(TodoListController,todosModel);
 
