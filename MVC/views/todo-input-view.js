@@ -23,7 +23,7 @@ TodoInputView.prototype.listen = function(){
 			var $input = self.$el.find("input.input-todo");
 			var content = $input.val();
 			if(content.length === 0) return;
-			$input.val("");
+			$input.val("");//清空文本框
 			self.controller.onAddNewTodo(content);
 		})
 }

@@ -1,8 +1,7 @@
 var TodoModel = require("mvc/models/todos");
 
-var TodoInputController = require("mvc/controllers/todo-input-controller"
-);
-var TodoInputList = require("mvc/views/todo-input-view");
+var TodoInputController = require("mvc/controllers/todo-input-controller");
+var TodoInputView = require("mvc/views/todo-input-view");
 
 var TodoListController = require("mvc/controllers/todo-list-controller");
 var TodoListView = require("mvc/views/todo-list-view");
@@ -15,8 +14,8 @@ function initTodoApp(){
 }
 
 function initInput(){
-	var todoInputConmtroller = new TodoInputController(todosModel);
-	var todoInputView = new TodoInputList(todoInputController,todosModel);
+	var todoInputController = new TodoInputController(todosModel);
+	var todoInputView = new TodoInputView(todoInputController,todosModel);
 
 	todoInputView.build();
 	$("#todo-input").html(todoInputView.$el);
