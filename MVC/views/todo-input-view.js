@@ -18,7 +18,7 @@ TodoInputView.prototype.render = function(){
 
 TodoInputView.prototype.listen = function(){
 	var self = this;
-	this.$el.find("button.new-todo-button")
+	self.$el.find("button.new-todo-button")
 		.on("click",function() {
 			var $input = self.$el.find("input.input-todo");
 			var content = $input.val();
