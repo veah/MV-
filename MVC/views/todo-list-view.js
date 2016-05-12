@@ -4,7 +4,7 @@ function TodoListView(controller,model) {
 	this.controller = controller;
 	this.model = model;
 	this.template = Handlebars.compile($("#todo-list-tpl").html());
-	this.$el = $("<div></div>");
+	this.$el = $("<div></div>");//创建一个新的div
 }
 
 TodoListView.prototype.build = function(){
