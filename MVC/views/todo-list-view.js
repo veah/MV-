@@ -22,7 +22,7 @@ TodoListView.prototype.listenCheck = function(){
 	var self = this;
 	self.$el.on("click","li",null,function(event){
 		var $li = $(event.currentTarget);
-		self.controller.onCheck(+$li.attr("data-index"));
+		self.controller.onCheck(+$li.attr("data-index"));//使之转换为Num类型
 	})
 }
 

@@ -21,7 +21,7 @@ TodoInputView.prototype.listen = function(){
 	self.$el.find("button.new-todo-button")
 		.on("click",function() {
 			var $input = self.$el.find("input.input-todo");
-			var content = $input.val();
+			var content = $input.val();//获取input的值
 			if(content.length === 0) return;
 			$input.val("");//清空文本框
 			self.controller.onAddNewTodo(content);
