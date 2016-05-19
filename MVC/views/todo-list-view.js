@@ -27,7 +27,7 @@ TodoListView.prototype.listenCheck = function(){
 }
 
 TodoListView.prototype.listenModel = function(){
-	this.model.on("change",this.render.bind(this));
+	this.model.on("change",this.render.bind(this));//执行的是bind传回的函数而不是bind，因为有括号（）；
 }
 
 module.exports = TodoListView;

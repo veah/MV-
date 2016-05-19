@@ -4,7 +4,7 @@ function TodoInputView(controller,model){
 	this.controller = controller;
 	this.modle = modle;
 	this.template = Handlebars.compile($("#todo-input-tpl").html());
-	this.$el = $("<div></div>")
+	this.$el = $("<div></div>");
 }
 
 TodoInputView.prototype.build = function(){
