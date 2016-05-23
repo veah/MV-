@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>mvvm</title>
+</head>
+<body>
+	<div id="app">
+		<h1>TodoList Demo</h1>
+
+		<div>
+			<input type="test" class="input-todo" v-model="newTodoContent">
+			<button type="button" class="new-todo-btn" v-on="click:addNewTodo">新增</button>
+		</div>
+
+		<ul>
+			<li v-repeat="todos"
+				v-class="done:done"
+				v-on="click:checkTodo($index)">
+					{{content}}
+				</li>
+		</ul>
+	</div>
+
+	<script src="MVVM/mvvm.js"></script>
+</body>
+</html>
