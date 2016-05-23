@@ -4,7 +4,7 @@ var app = new viewModel({
 	el:"#app",
 	data:{
 		newTodoContent:"",
-		todos:[{content:"make ppt!"},done:false]
+		todos:[{content:"make ppt!",done:false}]
 	},
 	methods:{
 		addNewTodo:function(){
